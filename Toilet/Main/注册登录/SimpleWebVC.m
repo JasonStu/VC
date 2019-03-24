@@ -26,8 +26,9 @@
     [super viewDidLoad];
     [self.view addSubview:self.wkWebView];
     [self.view addSubview:self.navigationBarV];
-    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://focant.viphk1.ngrok.org/#/"]]];
-    
+//    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://focant.viphk1.ngrok.org/#/"]]];
+    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.htmlStr]]];
+
     
 }
 
