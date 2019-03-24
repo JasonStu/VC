@@ -1,0 +1,26 @@
+//
+//  PrefixHeader.pch
+//  Toilet
+//
+//  Created by 覃木春 on 2019/3/18.
+//  Copyright © 2019 MM. All rights reserved.
+//
+#ifdef __OBJC__
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <Masonry/Masonry.h>
+#import "MMGlobalMacro.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import <SDWebImage/UIImage+GIF.h>
+#import "ZJNetworkManager.h"
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "MBProgressHUD+MM.h"
+#import <MJExtension/MJExtension.h>
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+#endif

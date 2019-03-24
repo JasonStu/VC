@@ -1,0 +1,783 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E1BF1AF2243818A00576116 /* BannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1BF1AE2243818A00576116 /* BannerModel.m */; };
+		5E20CDF5223F3A9800875DCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CDF4223F3A9800875DCC /* AppDelegate.m */; };
+		5E20CDFD223F3A9900875DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E20CDFC223F3A9900875DCC /* Assets.xcassets */; };
+		5E20CE00223F3A9900875DCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E20CDFE223F3A9900875DCC /* LaunchScreen.storyboard */; };
+		5E20CE03223F3A9900875DCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CE02223F3A9900875DCC /* main.m */; };
+		5E20CE0D223F3A9900875DCC /* ToiletTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CE0C223F3A9900875DCC /* ToiletTests.m */; };
+		5E20CE18223F3A9900875DCC /* ToiletUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CE17223F3A9900875DCC /* ToiletUITests.m */; };
+		5E20CE43223F448B00875DCC /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CE42223F448B00875DCC /* BaseViewController.m */; };
+		5E20CE46223F455A00875DCC /* LZXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CE45223F455A00875DCC /* LZXViewController.m */; };
+		5E20CE49223F458000875DCC /* LZXCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CE48223F458000875DCC /* LZXCollectionViewCell.m */; };
+		5E20CE4F223F4C6800875DCC /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CE4E223F4C6800875DCC /* LoginVC.m */; };
+		5E20CE52223F4CD600875DCC /* HJBaseLogin_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CE51223F4CD600875DCC /* HJBaseLogin_VC.m */; };
+		5E20CE58223F88D200875DCC /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CE57223F88D200875DCC /* RegisterVC.m */; };
+		5E20CE5B223FA30E00875DCC /* ZJNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CE5A223FA30E00875DCC /* ZJNetworkManager.m */; };
+		5E2622782240993800A35C8E /* MBProgressHUD+MM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E2622772240993800A35C8E /* MBProgressHUD+MM.m */; };
+		5E26227B2240E44000A35C8E /* SimpleWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E26227A2240E44000A35C8E /* SimpleWebVC.m */; };
+		D6CFF53E383E2BE79AF391CC /* Pods_Toilet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFCD3BF6DF90D1BC0189F45 /* Pods_Toilet.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5E20CE09223F3A9900875DCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E20CDE8223F3A9800875DCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E20CDEF223F3A9800875DCC;
+			remoteInfo = Toilet;
+		};
+		5E20CE14223F3A9900875DCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5E20CDE8223F3A9800875DCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E20CDEF223F3A9800875DCC;
+			remoteInfo = Toilet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		440CA89CC6EDF84309AA23DF /* Pods-Toilet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toilet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Toilet/Pods-Toilet.debug.xcconfig"; sourceTree = "<group>"; };
+		5E1BF1AD2243818A00576116 /* BannerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerModel.h; sourceTree = "<group>"; };
+		5E1BF1AE2243818A00576116 /* BannerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerModel.m; sourceTree = "<group>"; };
+		5E20CDF0223F3A9800875DCC /* Toilet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toilet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E20CDF3223F3A9800875DCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E20CDF4223F3A9800875DCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E20CDFC223F3A9900875DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E20CDFF223F3A9900875DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E20CE01223F3A9900875DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E20CE02223F3A9900875DCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E20CE08223F3A9900875DCC /* ToiletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToiletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E20CE0C223F3A9900875DCC /* ToiletTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToiletTests.m; sourceTree = "<group>"; };
+		5E20CE0E223F3A9900875DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E20CE13223F3A9900875DCC /* ToiletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToiletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E20CE17223F3A9900875DCC /* ToiletUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToiletUITests.m; sourceTree = "<group>"; };
+		5E20CE19223F3A9900875DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E20CE41223F448B00875DCC /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		5E20CE42223F448B00875DCC /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		5E20CE44223F455A00875DCC /* LZXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZXViewController.h; sourceTree = "<group>"; };
+		5E20CE45223F455A00875DCC /* LZXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZXViewController.m; sourceTree = "<group>"; };
+		5E20CE47223F458000875DCC /* LZXCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZXCollectionViewCell.h; sourceTree = "<group>"; };
+		5E20CE48223F458000875DCC /* LZXCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZXCollectionViewCell.m; sourceTree = "<group>"; };
+		5E20CE4B223F470F00875DCC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5E20CE4C223F476400875DCC /* MMGlobalMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMGlobalMacro.h; sourceTree = "<group>"; };
+		5E20CE4D223F4C6800875DCC /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		5E20CE4E223F4C6800875DCC /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		5E20CE50223F4CD600875DCC /* HJBaseLogin_VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HJBaseLogin_VC.h; sourceTree = "<group>"; };
+		5E20CE51223F4CD600875DCC /* HJBaseLogin_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJBaseLogin_VC.m; sourceTree = "<group>"; };
+		5E20CE56223F88D200875DCC /* RegisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
+		5E20CE57223F88D200875DCC /* RegisterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
+		5E20CE59223FA30E00875DCC /* ZJNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJNetworkManager.h; sourceTree = "<group>"; };
+		5E20CE5A223FA30E00875DCC /* ZJNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJNetworkManager.m; sourceTree = "<group>"; };
+		5E2622762240993800A35C8E /* MBProgressHUD+MM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MM.h"; sourceTree = "<group>"; };
+		5E2622772240993800A35C8E /* MBProgressHUD+MM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MM.m"; sourceTree = "<group>"; };
+		5E2622792240E44000A35C8E /* SimpleWebVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleWebVC.h; sourceTree = "<group>"; };
+		5E26227A2240E44000A35C8E /* SimpleWebVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleWebVC.m; sourceTree = "<group>"; };
+		6AE7D44A3A013666CE48E71F /* Pods-Toilet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toilet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Toilet/Pods-Toilet.release.xcconfig"; sourceTree = "<group>"; };
+		CBFCD3BF6DF90D1BC0189F45 /* Pods_Toilet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Toilet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E20CDED223F3A9800875DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6CFF53E383E2BE79AF391CC /* Pods_Toilet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E20CE05223F3A9900875DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E20CE10223F3A9900875DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E20CDE7223F3A9800875DCC = {
+			isa = PBXGroup;
+			children = (
+				5E20CDF2223F3A9800875DCC /* Toilet */,
+				5E20CE0B223F3A9900875DCC /* ToiletTests */,
+				5E20CE16223F3A9900875DCC /* ToiletUITests */,
+				5E20CDF1223F3A9800875DCC /* Products */,
+				FB3CFF9469FAA3A7C99A3EE2 /* Pods */,
+				EC6CFDDC22CED090092CFC65 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5E20CDF1223F3A9800875DCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E20CDF0223F3A9800875DCC /* Toilet.app */,
+				5E20CE08223F3A9900875DCC /* ToiletTests.xctest */,
+				5E20CE13223F3A9900875DCC /* ToiletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E20CDF2223F3A9800875DCC /* Toilet */ = {
+			isa = PBXGroup;
+			children = (
+				5E20CE25223F3F7000875DCC /* Main */,
+				5E20CDF3223F3A9800875DCC /* AppDelegate.h */,
+				5E20CDF4223F3A9800875DCC /* AppDelegate.m */,
+				5E20CE4B223F470F00875DCC /* PrefixHeader.pch */,
+				5E20CE4C223F476400875DCC /* MMGlobalMacro.h */,
+				5E20CDFC223F3A9900875DCC /* Assets.xcassets */,
+				5E20CDFE223F3A9900875DCC /* LaunchScreen.storyboard */,
+				5E20CE01223F3A9900875DCC /* Info.plist */,
+				5E20CE02223F3A9900875DCC /* main.m */,
+			);
+			path = Toilet;
+			sourceTree = "<group>";
+		};
+		5E20CE0B223F3A9900875DCC /* ToiletTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E20CE0C223F3A9900875DCC /* ToiletTests.m */,
+				5E20CE0E223F3A9900875DCC /* Info.plist */,
+			);
+			path = ToiletTests;
+			sourceTree = "<group>";
+		};
+		5E20CE16223F3A9900875DCC /* ToiletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5E20CE17223F3A9900875DCC /* ToiletUITests.m */,
+				5E20CE19223F3A9900875DCC /* Info.plist */,
+			);
+			path = ToiletUITests;
+			sourceTree = "<group>";
+		};
+		5E20CE25223F3F7000875DCC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5E20CE26223F3F8800875DCC /* 注册登录 */,
+				5E20CE4A223F46ED00875DCC /* 引导页 */,
+				5E20CE40223F447200875DCC /* Base */,
+				5E20CE3F223F43E700875DCC /* Tool */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5E20CE26223F3F8800875DCC /* 注册登录 */ = {
+			isa = PBXGroup;
+			children = (
+				5E20CE50223F4CD600875DCC /* HJBaseLogin_VC.h */,
+				5E20CE51223F4CD600875DCC /* HJBaseLogin_VC.m */,
+				5E20CE4D223F4C6800875DCC /* LoginVC.h */,
+				5E20CE4E223F4C6800875DCC /* LoginVC.m */,
+				5E20CE56223F88D200875DCC /* RegisterVC.h */,
+				5E20CE57223F88D200875DCC /* RegisterVC.m */,
+				5E2622792240E44000A35C8E /* SimpleWebVC.h */,
+				5E26227A2240E44000A35C8E /* SimpleWebVC.m */,
+			);
+			path = "注册登录";
+			sourceTree = "<group>";
+		};
+		5E20CE3F223F43E700875DCC /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				5E20CE59223FA30E00875DCC /* ZJNetworkManager.h */,
+				5E20CE5A223FA30E00875DCC /* ZJNetworkManager.m */,
+				5E2622762240993800A35C8E /* MBProgressHUD+MM.h */,
+				5E2622772240993800A35C8E /* MBProgressHUD+MM.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		5E20CE40223F447200875DCC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5E20CE41223F448B00875DCC /* BaseViewController.h */,
+				5E20CE42223F448B00875DCC /* BaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5E20CE4A223F46ED00875DCC /* 引导页 */ = {
+			isa = PBXGroup;
+			children = (
+				5E20CE44223F455A00875DCC /* LZXViewController.h */,
+				5E20CE45223F455A00875DCC /* LZXViewController.m */,
+				5E20CE47223F458000875DCC /* LZXCollectionViewCell.h */,
+				5E20CE48223F458000875DCC /* LZXCollectionViewCell.m */,
+				5E1BF1AD2243818A00576116 /* BannerModel.h */,
+				5E1BF1AE2243818A00576116 /* BannerModel.m */,
+			);
+			path = "引导页";
+			sourceTree = "<group>";
+		};
+		EC6CFDDC22CED090092CFC65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBFCD3BF6DF90D1BC0189F45 /* Pods_Toilet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB3CFF9469FAA3A7C99A3EE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				440CA89CC6EDF84309AA23DF /* Pods-Toilet.debug.xcconfig */,
+				6AE7D44A3A013666CE48E71F /* Pods-Toilet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E20CDEF223F3A9800875DCC /* Toilet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E20CE1C223F3A9900875DCC /* Build configuration list for PBXNativeTarget "Toilet" */;
+			buildPhases = (
+				60B076FFE9A8B80796ACC088 /* [CP] Check Pods Manifest.lock */,
+				5E20CDEC223F3A9800875DCC /* Sources */,
+				5E20CDED223F3A9800875DCC /* Frameworks */,
+				5E20CDEE223F3A9800875DCC /* Resources */,
+				567BF513133FA5F814DF8760 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Toilet;
+			productName = Toilet;
+			productReference = 5E20CDF0223F3A9800875DCC /* Toilet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5E20CE07223F3A9900875DCC /* ToiletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E20CE1F223F3A9900875DCC /* Build configuration list for PBXNativeTarget "ToiletTests" */;
+			buildPhases = (
+				5E20CE04223F3A9900875DCC /* Sources */,
+				5E20CE05223F3A9900875DCC /* Frameworks */,
+				5E20CE06223F3A9900875DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E20CE0A223F3A9900875DCC /* PBXTargetDependency */,
+			);
+			name = ToiletTests;
+			productName = ToiletTests;
+			productReference = 5E20CE08223F3A9900875DCC /* ToiletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5E20CE12223F3A9900875DCC /* ToiletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E20CE22223F3A9900875DCC /* Build configuration list for PBXNativeTarget "ToiletUITests" */;
+			buildPhases = (
+				5E20CE0F223F3A9900875DCC /* Sources */,
+				5E20CE10223F3A9900875DCC /* Frameworks */,
+				5E20CE11223F3A9900875DCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5E20CE15223F3A9900875DCC /* PBXTargetDependency */,
+			);
+			name = ToiletUITests;
+			productName = ToiletUITests;
+			productReference = 5E20CE13223F3A9900875DCC /* ToiletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E20CDE8223F3A9800875DCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = MM;
+				TargetAttributes = {
+					5E20CDEF223F3A9800875DCC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5E20CE07223F3A9900875DCC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5E20CDEF223F3A9800875DCC;
+					};
+					5E20CE12223F3A9900875DCC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5E20CDEF223F3A9800875DCC;
+					};
+				};
+			};
+			buildConfigurationList = 5E20CDEB223F3A9800875DCC /* Build configuration list for PBXProject "Toilet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E20CDE7223F3A9800875DCC;
+			productRefGroup = 5E20CDF1223F3A9800875DCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E20CDEF223F3A9800875DCC /* Toilet */,
+				5E20CE07223F3A9900875DCC /* ToiletTests */,
+				5E20CE12223F3A9900875DCC /* ToiletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E20CDEE223F3A9800875DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E20CE00223F3A9900875DCC /* LaunchScreen.storyboard in Resources */,
+				5E20CDFD223F3A9900875DCC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E20CE06223F3A9900875DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E20CE11223F3A9900875DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		567BF513133FA5F814DF8760 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Toilet/Pods-Toilet-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Toilet/Pods-Toilet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60B076FFE9A8B80796ACC088 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Toilet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E20CDEC223F3A9800875DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E26227B2240E44000A35C8E /* SimpleWebVC.m in Sources */,
+				5E20CE5B223FA30E00875DCC /* ZJNetworkManager.m in Sources */,
+				5E2622782240993800A35C8E /* MBProgressHUD+MM.m in Sources */,
+				5E20CE03223F3A9900875DCC /* main.m in Sources */,
+				5E20CE49223F458000875DCC /* LZXCollectionViewCell.m in Sources */,
+				5E20CE4F223F4C6800875DCC /* LoginVC.m in Sources */,
+				5E20CE43223F448B00875DCC /* BaseViewController.m in Sources */,
+				5E1BF1AF2243818A00576116 /* BannerModel.m in Sources */,
+				5E20CDF5223F3A9800875DCC /* AppDelegate.m in Sources */,
+				5E20CE58223F88D200875DCC /* RegisterVC.m in Sources */,
+				5E20CE46223F455A00875DCC /* LZXViewController.m in Sources */,
+				5E20CE52223F4CD600875DCC /* HJBaseLogin_VC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E20CE04223F3A9900875DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E20CE0D223F3A9900875DCC /* ToiletTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E20CE0F223F3A9900875DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E20CE18223F3A9900875DCC /* ToiletUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5E20CE0A223F3A9900875DCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E20CDEF223F3A9800875DCC /* Toilet */;
+			targetProxy = 5E20CE09223F3A9900875DCC /* PBXContainerItemProxy */;
+		};
+		5E20CE15223F3A9900875DCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E20CDEF223F3A9800875DCC /* Toilet */;
+			targetProxy = 5E20CE14223F3A9900875DCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5E20CDFE223F3A9900875DCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E20CDFF223F3A9900875DCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E20CE1A223F3A9900875DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5E20CE1B223F3A9900875DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E20CE1D223F3A9900875DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 440CA89CC6EDF84309AA23DF /* Pods-Toilet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Toilet/Main/AliPay",
+				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Toilet/PrefixHeader.pch";
+				INFOPLIST_FILE = Toilet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Toilet/Main/AliPay",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgIOS.EVCe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E20CE1E223F3A9900875DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AE7D44A3A013666CE48E71F /* Pods-Toilet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Toilet/Main/AliPay",
+				);
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/Toilet/PrefixHeader.pch";
+				INFOPLIST_FILE = Toilet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Toilet/Main/AliPay",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jgIOS.EVCe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5E20CE20223F3A9900875DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C3K834422;
+				INFOPLIST_FILE = ToiletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XX.ToiletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toilet.app/Toilet";
+			};
+			name = Debug;
+		};
+		5E20CE21223F3A9900875DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C3K834422;
+				INFOPLIST_FILE = ToiletTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XX.ToiletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Toilet.app/Toilet";
+			};
+			name = Release;
+		};
+		5E20CE23223F3A9900875DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C3K834422;
+				INFOPLIST_FILE = ToiletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XX.ToiletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Toilet;
+			};
+			name = Debug;
+		};
+		5E20CE24223F3A9900875DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C3K834422;
+				INFOPLIST_FILE = ToiletUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = XX.ToiletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Toilet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E20CDEB223F3A9800875DCC /* Build configuration list for PBXProject "Toilet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E20CE1A223F3A9900875DCC /* Debug */,
+				5E20CE1B223F3A9900875DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E20CE1C223F3A9900875DCC /* Build configuration list for PBXNativeTarget "Toilet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E20CE1D223F3A9900875DCC /* Debug */,
+				5E20CE1E223F3A9900875DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E20CE1F223F3A9900875DCC /* Build configuration list for PBXNativeTarget "ToiletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E20CE20223F3A9900875DCC /* Debug */,
+				5E20CE21223F3A9900875DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E20CE22223F3A9900875DCC /* Build configuration list for PBXNativeTarget "ToiletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E20CE23223F3A9900875DCC /* Debug */,
+				5E20CE24223F3A9900875DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E20CDE8223F3A9800875DCC /* Project object */;
+}

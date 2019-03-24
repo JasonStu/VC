@@ -1,0 +1,17 @@
+platform :ios, '9.0'
+
+inhibit_all_warnings!
+
+target 'Toilet' do
+    use_frameworks!
+
+pod 'Masonry'
+pod 'YYKit'
+pod 'AFNetworking'
+pod 'SDWebImage', '~> 3.8.2'
+pod 'Reachability'
+pod 'IQKeyboardManager'
+pod 'MBProgressHUD'
+pod 'MJExtension'
+
+end
