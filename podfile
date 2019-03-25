@@ -13,5 +13,6 @@ pod 'Reachability'
 pod 'IQKeyboardManager'
 pod 'MBProgressHUD'
 pod 'MJExtension'
+pod 'JPush'
 
 end

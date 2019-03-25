@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E09D08622487A78004E555F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09D08522487A77004E555F /* CFNetwork.framework */; };
+		5E09D08822487A8C004E555F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09D08722487A8C004E555F /* CoreFoundation.framework */; };
+		5E09D08A22487AA1004E555F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09D08922487AA1004E555F /* CoreTelephony.framework */; };
+		5E09D08C22487AAE004E555F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09D08B22487AAE004E555F /* SystemConfiguration.framework */; };
+		5E09D08E22487AC1004E555F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09D08D22487AC1004E555F /* CoreGraphics.framework */; };
+		5E09D09022487ACF004E555F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09D08F22487ACF004E555F /* Foundation.framework */; };
+		5E09D09222487AD8004E555F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09D09122487AD8004E555F /* UIKit.framework */; };
+		5E09D09422487AED004E555F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09D09322487AED004E555F /* Security.framework */; };
+		5E09D09622487B08004E555F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09D09522487B08004E555F /* libz.tbd */; };
+		5E09D09822487B28004E555F /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09D09722487B28004E555F /* UserNotifications.framework */; };
+		5E09D09A22487B36004E555F /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09D09922487B36004E555F /* libresolv.tbd */; };
 		5E1BF1AF2243818A00576116 /* BannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1BF1AE2243818A00576116 /* BannerModel.m */; };
 		5E20CDF5223F3A9800875DCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CDF4223F3A9800875DCC /* AppDelegate.m */; };
 		5E20CDFD223F3A9900875DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E20CDFC223F3A9900875DCC /* Assets.xcassets */; };
@@ -45,6 +56,18 @@
 
 /* Begin PBXFileReference section */
 		440CA89CC6EDF84309AA23DF /* Pods-Toilet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Toilet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Toilet/Pods-Toilet.debug.xcconfig"; sourceTree = "<group>"; };
+		5E09D08522487A77004E555F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		5E09D08722487A8C004E555F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5E09D08922487AA1004E555F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		5E09D08B22487AAE004E555F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5E09D08D22487AC1004E555F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5E09D08F22487ACF004E555F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5E09D09122487AD8004E555F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5E09D09322487AED004E555F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5E09D09522487B08004E555F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5E09D09722487B28004E555F /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		5E09D09922487B36004E555F /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		5E09D09B22487B6F004E555F /* Toilet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Toilet.entitlements; sourceTree = "<group>"; };
 		5E1BF1AD2243818A00576116 /* BannerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerModel.h; sourceTree = "<group>"; };
 		5E1BF1AE2243818A00576116 /* BannerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerModel.m; sourceTree = "<group>"; };
 		5E20CDF0223F3A9800875DCC /* Toilet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Toilet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +112,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E09D09A22487B36004E555F /* libresolv.tbd in Frameworks */,
+				5E09D09822487B28004E555F /* UserNotifications.framework in Frameworks */,
+				5E09D09622487B08004E555F /* libz.tbd in Frameworks */,
+				5E09D09422487AED004E555F /* Security.framework in Frameworks */,
+				5E09D09222487AD8004E555F /* UIKit.framework in Frameworks */,
+				5E09D09022487ACF004E555F /* Foundation.framework in Frameworks */,
+				5E09D08E22487AC1004E555F /* CoreGraphics.framework in Frameworks */,
+				5E09D08C22487AAE004E555F /* SystemConfiguration.framework in Frameworks */,
+				5E09D08A22487AA1004E555F /* CoreTelephony.framework in Frameworks */,
+				5E09D08822487A8C004E555F /* CoreFoundation.framework in Frameworks */,
+				5E09D08622487A78004E555F /* CFNetwork.framework in Frameworks */,
 				D6CFF53E383E2BE79AF391CC /* Pods_Toilet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +169,7 @@
 		5E20CDF2223F3A9800875DCC /* Toilet */ = {
 			isa = PBXGroup;
 			children = (
+				5E09D09B22487B6F004E555F /* Toilet.entitlements */,
 				5E20CE25223F3F7000875DCC /* Main */,
 				5E20CDF3223F3A9800875DCC /* AppDelegate.h */,
 				5E20CDF4223F3A9800875DCC /* AppDelegate.m */,
@@ -228,6 +263,17 @@
 		EC6CFDDC22CED090092CFC65 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5E09D09922487B36004E555F /* libresolv.tbd */,
+				5E09D09722487B28004E555F /* UserNotifications.framework */,
+				5E09D09522487B08004E555F /* libz.tbd */,
+				5E09D09322487AED004E555F /* Security.framework */,
+				5E09D09122487AD8004E555F /* UIKit.framework */,
+				5E09D08F22487ACF004E555F /* Foundation.framework */,
+				5E09D08D22487AC1004E555F /* CoreGraphics.framework */,
+				5E09D08B22487AAE004E555F /* SystemConfiguration.framework */,
+				5E09D08922487AA1004E555F /* CoreTelephony.framework */,
+				5E09D08722487A8C004E555F /* CoreFoundation.framework */,
+				5E09D08522487A77004E555F /* CFNetwork.framework */,
 				CBFCD3BF6DF90D1BC0189F45 /* Pods_Toilet.framework */,
 			);
 			name = Frameworks;
@@ -311,6 +357,14 @@
 				TargetAttributes = {
 					5E20CDEF223F3A9800875DCC = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					5E20CE07223F3A9900875DCC = {
 						CreatedOnToolsVersion = 10.1;
@@ -543,7 +597,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -596,7 +650,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -609,9 +663,10 @@
 			baseConfigurationReference = 440CA89CC6EDF84309AA23DF /* Pods-Toilet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Toilet/Toilet.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RH6H6R8K2V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Toilet/Main/AliPay",
@@ -639,9 +694,10 @@
 			baseConfigurationReference = 6AE7D44A3A013666CE48E71F /* Pods-Toilet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Toilet/Toilet.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RH6H6R8K2V;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Toilet/Main/AliPay",
