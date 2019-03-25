@@ -18,6 +18,8 @@
 		5E09D09622487B08004E555F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09D09522487B08004E555F /* libz.tbd */; };
 		5E09D09822487B28004E555F /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09D09722487B28004E555F /* UserNotifications.framework */; };
 		5E09D09A22487B36004E555F /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E09D09922487B36004E555F /* libresolv.tbd */; };
+		5E09D09C2248CF87004E555F /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CE4E223F4C6800875DCC /* LoginVC.m */; };
+		5E09D09D2248CF93004E555F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CE42223F448B00875DCC /* BaseViewController.m */; };
 		5E1BF1AF2243818A00576116 /* BannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1BF1AE2243818A00576116 /* BannerModel.m */; };
 		5E20CDF5223F3A9800875DCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E20CDF4223F3A9800875DCC /* AppDelegate.m */; };
 		5E20CDFD223F3A9900875DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E20CDFC223F3A9900875DCC /* Assets.xcassets */; };
@@ -298,7 +300,7 @@
 				5E20CDED223F3A9800875DCC /* Frameworks */,
 				5E20CDEE223F3A9800875DCC /* Resources */,
 				567BF513133FA5F814DF8760 /* [CP] Embed Pods Frameworks */,
-				44E41296D95AD576EBD0A270 /* [CP] Copy Pods Resources */,
+				3D41AD115C78B3930B4701DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -422,7 +424,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		44E41296D95AD576EBD0A270 /* [CP] Copy Pods Resources */ = {
+		3D41AD115C78B3930B4701DA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -510,11 +512,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E26227B2240E44000A35C8E /* SimpleWebVC.m in Sources */,
+				5E09D09D2248CF93004E555F /* BaseViewController.m in Sources */,
 				5E20CE5B223FA30E00875DCC /* ZJNetworkManager.m in Sources */,
 				5E2622782240993800A35C8E /* MBProgressHUD+MM.m in Sources */,
 				5E20CE03223F3A9900875DCC /* main.m in Sources */,
 				5E20CE49223F458000875DCC /* LZXCollectionViewCell.m in Sources */,
 				5E1BF1AF2243818A00576116 /* BannerModel.m in Sources */,
+				5E09D09C2248CF87004E555F /* LoginVC.m in Sources */,
 				5E20CDF5223F3A9800875DCC /* AppDelegate.m in Sources */,
 				5E20CE58223F88D200875DCC /* RegisterVC.m in Sources */,
 				5E20CE46223F455A00875DCC /* LZXViewController.m in Sources */,

@@ -18,7 +18,7 @@
 #import <UserNotifications/UserNotifications.h>
 #endif
 #import <AlipaySDK/AlipaySDK.h>
-#import "WXApiObject.h"
+#import <WXApiObject.h>
 
 
 @interface AppDelegate ()<JPUSHRegisterDelegate>

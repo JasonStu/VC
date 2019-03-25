@@ -17,5 +17,4 @@ pod 'JPush'
 pod 'AlipaySDK-iOS'
 pod 'WechatOpenSDK'
 #pod 'YYImage'
-
 end
