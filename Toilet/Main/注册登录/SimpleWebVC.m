@@ -10,6 +10,8 @@
 #import <WebKit/WebKit.h>
 #import <JavaScriptCore/JavaScriptCore.h>
 #import <AlipaySDK/AlipaySDK.h>
+#import "WXApiObject.h"
+#import "WXApi.h"
 
 @interface SimpleWebVC ()<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
 
@@ -26,8 +28,12 @@
     [super viewDidLoad];
     [self.view addSubview:self.wkWebView];
     [self.view addSubview:self.navigationBarV];
-//    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://focant.viphk1.ngrok.org/#/"]]];
-    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.htmlStr]]];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationFirst:) name:@"wechatPay" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notificationFirst:) name:@"aliPay" object:nil];
+
+     NSString *str = [[NSUserDefaults standardUserDefaults] objectForKey:@"userInfo"];
+    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://focant.viphk1.ngrok.org/#/home?userCode=%@",str]]]];
+//    [self.wkWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.htmlStr]]];
 
     
 }
@@ -37,6 +43,18 @@
     
 }
 
+
+- (void)notificationFirst:(NSNotification *)resp{
+    if ([resp.userInfo[@"errorCode"]isEqualToString:@"0"] ) {
+        [self.wkWebView evaluateJavaScript:@"window.lrsfvm.$root.eventHub.$emit('payStatus', {payStatus:1})" completionHandler:^(id _Nullable item, NSError * _Nullable error) {
+        
+        }];
+    }else{
+        [self.wkWebView evaluateJavaScript:@"window.lrsfvm.$root.eventHub.$emit('payStatus', {payStatus:0})" completionHandler:^(id _Nullable item, NSError * _Nullable error) {
+            
+        }];
+    }
+}
 
 - (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation{
     _wkWebView.alpha = 1;
@@ -49,6 +67,19 @@
 //    [self.wkWebView evaluateJavaScript:@"payStatus(1)" completionHandler:^(id _Nullable item, NSError * _Nullable error) {
 //        NSLog(@"alert");
 //    }];
+    
+    if ([message.name isEqualToString:@"pay"]) {
+        NSDictionary *body = [NSDictionary dictionaryWithDictionary:message.body];
+        
+        if ([body[@"type"] isEqualToString:@"alipay"]) {
+            [self alipayAction:body[@"body"]];
+        }else if ([body[@"type"] isEqualToString:@"wechat"]){
+            [self wechatPayAction:body[@"body"]];
+        }
+    }else if ([message.name isEqualToString:@"pushImg"]){
+        
+    }
+    
 }
 
 
@@ -63,6 +94,24 @@
     
 }
 
+-(void)alipayAction:(NSString *)key{
+    [[AlipaySDK defaultService] payOrder:(NSString *)key fromScheme:@"EVCe" callback:^(NSDictionary *resultDic) {
+        NSLog(@"reslut = %@",resultDic);
+  
+    }];
+}
+
+-(void)wechatPayAction:(NSDictionary *)data{
+    PayReq* req             = [PayReq new];
+    req.partnerId           = data[@"partnerId"];
+    req.prepayId            = data[@"prepayId"];
+    req.nonceStr            = data[@"nonceStr"];
+    req.timeStamp           = [data[@"timeStamp"] unsignedIntValue];
+    req.package             = data[@"packageValue"];
+    req.sign                = data[@"paySign"];
+    BOOL success = [WXApi sendReq:req];
+}
+
 -(WKWebView *)wkWebView{
     if (!_wkWebView) {
         
@@ -74,7 +123,7 @@
         _wkWebView.navigationDelegate = self;
         _wkWebView.alpha = 0;
         [userController addScriptMessageHandler:self name:@"pay"];
-
+        [userController addScriptMessageHandler:self name:@"pushImg"];
     }
     return _wkWebView;
 }
