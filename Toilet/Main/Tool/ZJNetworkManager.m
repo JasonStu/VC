@@ -53,7 +53,7 @@
     [self.afManager POST:url parameters:param progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"请求结果: %@",responseObject);
+//        NSLog(@"请求结果: %@",responseObject);
         NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:nil];
         [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
         success(dict);

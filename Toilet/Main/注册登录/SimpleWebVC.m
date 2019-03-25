@@ -10,8 +10,10 @@
 #import <WebKit/WebKit.h>
 #import <JavaScriptCore/JavaScriptCore.h>
 #import <AlipaySDK/AlipaySDK.h>
-#import "WXApiObject.h"
-#import "WXApi.h"
+//#import "WXApiObject.h"
+#import <WXApiObject.h>
+//#import "WXApi.h"
+#import <WXApi.h>
 
 @interface SimpleWebVC ()<WKNavigationDelegate,WKUIDelegate,WKScriptMessageHandler>
 

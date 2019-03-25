@@ -30,6 +30,8 @@
 #define SuccessCode [resultDic[@"status"] intValue] == 1
 #define ShowToast  resultDic[@"message"]
 
+#define JPUSHAppkey @"df2ce30abed7ea87ab965ad9"
+
 
 #ifdef DEBUG // 开发调试阶段
 
