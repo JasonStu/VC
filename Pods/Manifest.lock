@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - AlipaySDK-iOS (0.0.1)
   - IQKeyboardManager (6.1.1)
   - JCore (1.2.2)
   - JPush (3.1.0):
@@ -25,12 +26,14 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - WechatOpenSDK (1.8.2)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
   - AFNetworking
+  - AlipaySDK-iOS
   - IQKeyboardManager
   - JPush
   - Masonry
@@ -38,11 +41,13 @@ DEPENDENCIES:
   - MJExtension
   - Reachability
   - SDWebImage (~> 3.8.2)
+  - WechatOpenSDK
   - YYKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - AlipaySDK-iOS
     - IQKeyboardManager
     - JCore
     - JPush
@@ -51,10 +56,12 @@ SPEC REPOS:
     - MJExtension
     - Reachability
     - SDWebImage
+    - WechatOpenSDK
     - YYKit
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AlipaySDK-iOS: 144af370f7665f2d311b5528e2c5d9a6738bf6fd
   IQKeyboardManager: 79c57795f5c2408d259d37b9da2ed07efcbb5225
   JCore: f14c0549968a63c22e246a4875aa9d428446f373
   JPush: 5921e25ad13e0386351079217b009f2039084eac
@@ -63,8 +70,9 @@ SPEC CHECKSUMS:
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  WechatOpenSDK: 676feec516a11173eafd1fe64b10d27babf28701
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: d6d9c964e47fb7b81993b5173e301fad68df8f1e
+PODFILE CHECKSUM: 1c076fa97f219226ffcade981928747c7e765174
 
 COCOAPODS: 1.5.3

@@ -14,5 +14,8 @@ pod 'IQKeyboardManager'
 pod 'MBProgressHUD'
 pod 'MJExtension'
 pod 'JPush'
+pod 'AlipaySDK-iOS'
+pod 'WechatOpenSDK'
+#pod 'YYImage'
 
 end
